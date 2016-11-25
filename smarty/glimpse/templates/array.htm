@@ -1,0 +1,20 @@
+用foreach二层遍历循环
+
+{foreach item=row from=$news} 
+
+{foreach key=field item=value from=$row}
+
+{$field}：{$value}<br>
+
+{/foreach}
+
+{/foreach}
+
+用。来访问
+
+{foreach item=row from=$news}
+
+新闻编号：{$row.newsID}<br>
+新闻标题：{$row.newsTitle}<br>
+
+{/foreach}
